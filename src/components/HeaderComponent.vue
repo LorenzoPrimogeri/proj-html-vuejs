@@ -47,27 +47,19 @@
           </div>
         </div>
       </div>
-      <div class="specialDiv d-flex flex-column position-absolute">
-        <div class="my-3">
-          <p class="card d-inline">Demos</p>
-        </div>
-        <div>
-          <div class="my-2">
-            <p class="card d-inline">dollars</p>
-            <p>39</p>
-            <p>On sale</p>
-          </div>
-        </div>
-      </div>
+      <SpecialDiv />
     </div>
   </div>
 </template>
 
 <script>
 import data from "../assets/data/headerData.js";
-
+import SpecialDiv from "./SpecialDiv.vue";
 export default {
   name: "headerComponent",
+  components: {
+    SpecialDiv,
+  },
   data() {
     return {
       data,
@@ -99,7 +91,7 @@ li:hover {
   background-color: white;
   padding: 10px;
 }
-.specialDiv{
-    right: 0;
+.specialDiv {
+  right: 0;
 }
 </style>
