@@ -33,4 +33,18 @@ p {
 .c-grey {
   color: grey;
 }
+.c-white {
+  color: white;
+}
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color: currentColor !important;
+}
 </style>

@@ -1,18 +1,21 @@
 <template>
   <div>
-    <div class="top-header container-fluid">
+    <div class="top-header container-fluid position-relative">
       <div class="container">
         <div class="row justify-content-between c-grey">
           <div class="col-6">
             <p class="py-3">We have a 95% Successful Pass Rate!</p>
           </div>
           <div class="col-6 py-3">
-            <p>Give us a call to book your tuiton! 1-800-555-555</p>
+            <p class="text-end">
+              <font-awesome-icon icon="fas fa-phone-alt" />
+              Give us a call to book your tuiton! 1-800-555-555
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="header container-fluid">
+    <div class="header container-fluid position-fixed">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -26,7 +29,33 @@
                   />
                 </div>
               </div>
+              <div class="col-7 d-flex align-items-center">
+                <ul>
+                  <li
+                    v-for="(item, index) in data"
+                    :key="index"
+                    class="c-white d-inline mx-4"
+                  >
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+              <div class="col-2 d-flex align-items-center">
+                <a href="" class="lp-btn py-3 px-5">BOOK NOW</a>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="specialDiv d-flex flex-column position-absolute">
+        <div class="my-3">
+          <p class="card d-inline">Demos</p>
+        </div>
+        <div>
+          <div class="my-2">
+            <p class="card d-inline">dollars</p>
+            <p>39</p>
+            <p>On sale</p>
           </div>
         </div>
       </div>
@@ -35,14 +64,42 @@
 </template>
 
 <script>
-export default {};
+import data from "../assets/data/headerData.js";
+
+export default {
+  name: "headerComponent",
+  data() {
+    return {
+      data,
+    };
+  },
+};
 </script>
 
 <style scoped>
 .top-header {
-  background-color: #484848;
+  background-color: hsl(210deg 2% 21%);
 }
 .header {
-  background-color: rgba(14, 14, 14, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+li {
+  font-weight: 700;
+}
+li:hover {
+  color: green;
+  border-bottom: 4px solid green;
+}
+.lp-btn {
+  color: white;
+  background-color: hsl(105deg 40% 56%);
+  border-radius: 40%;
+}
+.card {
+  background-color: white;
+  padding: 10px;
+}
+.specialDiv{
+    right: 0;
 }
 </style>
