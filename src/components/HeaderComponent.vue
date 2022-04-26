@@ -36,7 +36,12 @@
                     :key="index"
                     class="c-white d-inline mx-4"
                   >
-                    {{ item }}
+                    {{ item.name }}
+                    <span
+                      v-if="(item.boolean = true)"
+                      :class="item.tip ? 'newClass' : ''"
+                      >{{ item.label }}</span
+                    >
                   </li>
                 </ul>
               </div>
@@ -93,5 +98,10 @@ li:hover {
 }
 .specialDiv {
   right: 0;
+}
+.newClass {
+  background-color: green;
+  border-radius: 25%;
+  padding: 4px;
 }
 </style>
