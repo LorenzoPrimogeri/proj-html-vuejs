@@ -34,7 +34,7 @@ p {
   color: grey;
 }
 .c-white {
-  color: white;
+  color: white !important;
 }
 ul {
   list-style-type: none;
@@ -47,7 +47,11 @@ a {
 a:hover {
   color: currentColor !important;
 }
-.bg-green{
-  background-color: lightgreen;
+.c-green {
+  color: lightgreen;
+}
+a {
+  font-weight: 700;
+  border-radius: 20%;
 }
 </style>

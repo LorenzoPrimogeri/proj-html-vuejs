@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <div class="header container-fluid position-fixed">
+    <div class="header container-fluid position-absolute">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -84,23 +84,16 @@ li {
   font-weight: 700;
 }
 li:hover {
-  color: green;
-  border-bottom: 4px solid green;
+  color: lightgreen;
+  border-bottom: 4px solid lightgreen;
 }
 .lp-btn {
   color: white;
   background-color: hsl(105deg 40% 56%);
   border-radius: 40%;
 }
-.card {
-  background-color: white;
-  padding: 10px;
-}
-.specialDiv {
-  right: 0;
-}
 .newClass {
-  background-color: green;
+  background-color: lightgreen;
   border-radius: 25%;
   padding: 4px;
 }
