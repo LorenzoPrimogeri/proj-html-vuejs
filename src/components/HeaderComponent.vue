@@ -90,7 +90,7 @@ li:hover {
 .lp-btn {
   color: white;
   background-color: hsl(105deg 40% 56%);
-  border-radius: 40%;
+  border-radius: 30px;
 }
 .newClass {
   background-color: lightgreen;

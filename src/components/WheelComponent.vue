@@ -52,8 +52,8 @@ export default {
   height: 700px;
 }
 .lp-card {
+  box-shadow: 5px 5px 15px 5px #636262;
   background-color: white;
-  border: 1px dashed red;
   right: 0;
   top: -95px;
   border-radius: 5%;
@@ -67,6 +67,7 @@ input {
   outline: none !important;
 }
 .btn {
+  border-radius: 30px;
   background-color: lightgreen;
 }
 </style>

@@ -52,6 +52,11 @@ a:hover {
 }
 a {
   font-weight: 700;
-  border-radius: 20%;
+}
+.w-30 {
+  width: 28% !important;
+}
+.w-40 {
+  width: 38% !important;
 }
 </style>
