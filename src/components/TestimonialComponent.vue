@@ -24,12 +24,13 @@
       <div class="c-grey py-3">
         <h4>{{ testimonialData[testimonialIndex].name }}</h4>
       </div>
-      <div class="row justify-content-center pb-5">
-        <div class="slideBtn" @click="testimonialIndex = 0"></div>
-        <div class="slideBtn mx-2" @click="testimonialIndex = 1"></div>
-        <div class="slideBtn" @click="testimonialIndex = 2"></div>
-        <div class="slideBtn mx-2" @click="testimonialIndex = 3"></div>
-        <div class="slideBtn" @click="testimonialIndex = 4"></div>
+      <div class="row justify-content-center pb-5 gap-4">
+        <div
+          v-for="(item, index) in 5"
+          :key="index"
+          :class="['slideBtn', testimonialData[index].tip ? 'bg-pinned' : '']"
+          @click="(testimonialIndex = index), pinnedOrNot(testimonialIndex)"
+        ></div>
       </div>
     </div>
   </div>
@@ -45,7 +46,19 @@ export default {
       testimonialIndex: 0,
     };
   },
-  methods: {},
+  methods: {
+    pinnedOrNot(index) {
+      //this.testimonialData[index].tip = !this.testimonialData[index].tip;
+      for (let i = 0; i < 5; i++) {
+        this.testimonialData[i].tip = false;
+        console.log(this.testimonialData[index].tip);
+        if (i == index) {
+          this.testimonialData[i].tip = true;
+          console.log(this.testimonialData[index].tip);
+        }
+      }
+    },
+  },
 };
 </script>
 
