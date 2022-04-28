@@ -26,7 +26,7 @@
         <div class="lp-card w-30">
           <div>
             <img
-              class="my-5 w-100"
+              class="my-5 w-80"
               src="../assets/img/instructor-mikehart-200x127.jpg"
               alt="mikehart"
             />
@@ -72,7 +72,7 @@
         <div class="lp-card w-30">
           <div>
             <img
-              class="my-5 w-100"
+              class="my-5 w-80"
               src="../assets/img/instructor-angelahart-200x127.jpg"
               alt="angelahart"
             />
@@ -122,6 +122,9 @@ export default {
   border-top: 10px solid rgb(1, 199, 1);
   background: white;
   border-radius: 10px;
+}
+img:hover {
+  transform: scale(1.1);
 }
 .row.justify-content-between.text-center.position-absolute {
   top: 200px;

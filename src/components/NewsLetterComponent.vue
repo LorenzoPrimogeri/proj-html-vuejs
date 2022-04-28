@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .container-fluid {
-  background-image: url("../assets/img/newsletter_background.jpg");
+  background-image: url("../assets/img/newsletter_background.jpg") !important;
   background-size: cover;
 }
 .lp-btn {

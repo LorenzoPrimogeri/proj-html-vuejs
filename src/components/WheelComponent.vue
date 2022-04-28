@@ -70,4 +70,8 @@ input {
   border-radius: 30px;
   background-color: lightgreen;
 }
+input[placeholder="Your Name*"] {
+  background: url(../assets/img/image.png) no-repeat;
+  background-position: 95% 50%;
+}
 </style>

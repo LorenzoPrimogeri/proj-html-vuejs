@@ -4,7 +4,12 @@
       <div class="container position-relative">
         <div class="row flex-nowrap">
           <div class="col-5 position-absolute">
-            <div class="lp-card text-center px-5 py-5">
+            <div class="lp-card text-center px-5 py-5 position-relative">
+              <div class="position-absolute new c-white">
+                <div class="">
+                  <h3 class="newTesto position-absolute">NEW</h3>
+                </div>
+              </div>
               <div>
                 <h1 class="py-5">Courses</h1>
               </div>
@@ -136,12 +141,30 @@ export default {
   border-radius: 30px;
   padding: 12px 30px;
 }
-
+.lp-btn2:hover {
+  border: 5px solid rgb(1, 199, 1);
+  color: rgb(1, 199, 1) !important;
+}
 .lp-btn2 {
   color: grey;
-
   border: 5px solid rgb(161, 161, 161);
   border-radius: 30px;
   padding: 12px 30px;
+}
+.new {
+  top: -50px;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 50px auto;
+  background: none;
+  border-width: 100px 100px 0 0;
+  border-style: solid;
+  border-color: rgb(1, 199, 1) transparent transparent transparent;
+}
+.newTesto {
+  color: white;
+  top: -80px;
+  transform: rotate(-40deg);
 }
 </style>

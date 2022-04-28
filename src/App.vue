@@ -59,4 +59,7 @@ a {
 .w-40 {
   width: 38% !important;
 }
+.w-80 {
+  width: 80% !important;
+}
 </style>

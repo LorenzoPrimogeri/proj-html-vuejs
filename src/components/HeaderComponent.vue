@@ -9,7 +9,7 @@
           <div class="col-6 py-3">
             <p class="text-end">
               <font-awesome-icon icon="fas fa-phone-alt" />
-              Give us a call to book your tuiton! 1-800-555-555
+              Give us a call to book yo ur tuiton! 1-800-555-555
             </p>
           </div>
         </div>
