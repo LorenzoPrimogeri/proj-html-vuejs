@@ -1,10 +1,20 @@
 <template>
-  <div>footer</div>
+  <div>
+    <NewsLetterComponent />
+  </div>
 </template>
 
 <script>
-export default {};
+import NewsLetterComponent from "./NewsLetterComponent.vue";
+export default {
+  name: "FooterComponent",
+  components: {
+    NewsLetterComponent,
+  },
+};
 </script>
 
 <style scoped>
+
+
 </style>

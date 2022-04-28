@@ -24,11 +24,14 @@
       <div class="c-grey py-3">
         <h4>{{ testimonialData[testimonialIndex].name }}</h4>
       </div>
-      <div class="row justify-content-center pb-5 gap-4">
+      <div class="row justify-content-center pb-5 gap-4 py-5">
         <div
           v-for="(item, index) in 5"
           :key="index"
-          :class="['slideBtn', testimonialData[index].tip ? 'bg-pinned' : '']"
+          :class="[
+            'slideBtn mb-5',
+            testimonialData[index].tip ? 'bg-pinned' : '',
+          ]"
           @click="(testimonialIndex = index), pinnedOrNot(testimonialIndex)"
         ></div>
       </div>
@@ -77,6 +80,6 @@ p {
   height: 20px;
 }
 .bg-pinned {
-  background-color: aqua;
+  background-color: rgb(107, 89, 128);
 }
 </style>

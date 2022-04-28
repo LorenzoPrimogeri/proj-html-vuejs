@@ -10,6 +10,7 @@
     <LearningComponent />
     <CoursesComponent />
     <InstructorComponent />
+    <NewsComponent />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import WheelComponent from "./WheelComponent.vue";
 import LearningComponent from "./LearningComponent.vue";
 import CoursesComponent from "./CoursesComponent.vue";
 import InstructorComponent from "./InstructorComponent.vue";
+import NewsComponent from "./NewsComponent.vue";
 export default {
   name: "MainComponent",
   components: {
@@ -25,6 +27,7 @@ export default {
     LearningComponent,
     CoursesComponent,
     InstructorComponent,
+    NewsComponent,
   },
 };
 </script>
