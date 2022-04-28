@@ -63,6 +63,7 @@
         </div>
       </div>
     </div>
+    <FooterBottomComponent />
   </div>
 </template>
 
@@ -70,10 +71,12 @@
 import NewsLetterComponent from "./NewsLetterComponent.vue";
 import data1 from "../assets/data/footerData1.js";
 import data2 from "../assets/data/footerData2.js";
+import FooterBottomComponent from "./FooterBottomComponent.vue";
 export default {
   name: "FooterComponent",
   components: {
     NewsLetterComponent,
+    FooterBottomComponent,
   },
   data() {
     return {
