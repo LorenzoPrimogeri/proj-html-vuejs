@@ -24,73 +24,13 @@
         "
       >
         <div class="lp-card w-30">
-          <div>
-            <img
-              class="my-5 w-80"
-              src="../assets/img/instructor-mikehart-200x127.jpg"
-              alt="mikehart"
-            />
-          </div>
-          <div>
-            <h2>Mike Hart</h2>
-          </div>
-          <div class="c-grey">
-            <font-awesome-icon icon="fab fa-facebook-f" />
-            <font-awesome-icon icon="fab fa-instagram" class="px-4" />
-            <font-awesome-icon icon="fab fa-twitter" />
-          </div>
-          <div class="w-100">
-            <p class="c-grey my-2 mb-5">
-              Lorem ipsum dolor sit amet elit. Similique distinctio tempore at
-              lostem.
-            </p>
-          </div>
+          <InstructorCard :obj="obj1" />
         </div>
         <div class="lp-card w-40">
-          <div>
-            <img
-              class="my-5 w-75"
-              src="../assets/img/instructor-johnsmith-200x127.jpg"
-              alt="johnsmith"
-            />
-          </div>
-          <div>
-            <h2>John Smith</h2>
-          </div>
-          <div class="c-grey">
-            <font-awesome-icon icon="fab fa-facebook-f" />
-            <font-awesome-icon icon="fab fa-instagram" class="px-4" />
-            <font-awesome-icon icon="fab fa-twitter" />
-          </div>
-          <div class="w-100">
-            <p class="c-grey my-2 mb-5">
-              Lorem ipsum dolor sit amet elit. Similique distinctio tempore at
-              lostem.
-            </p>
-          </div>
+          <InstructorCard :obj="obj2" />
         </div>
         <div class="lp-card w-30">
-          <div>
-            <img
-              class="my-5 w-80"
-              src="../assets/img/instructor-angelahart-200x127.jpg"
-              alt="angelahart"
-            />
-          </div>
-          <div>
-            <h2>Angela Hart</h2>
-          </div>
-          <div class="c-grey">
-            <font-awesome-icon icon="fab fa-facebook-f" />
-            <font-awesome-icon icon="fab fa-instagram" class="px-4" />
-            <font-awesome-icon icon="fab fa-twitter" />
-          </div>
-          <div class="w-100">
-            <p class="c-grey my-2 mb-5">
-              Lorem ipsum dolor sit amet elit. Similique distinctio tempore at
-              lostem.
-            </p>
-          </div>
+          <InstructorCard :obj="obj3" />
         </div>
       </div>
     </div>
@@ -100,11 +40,26 @@
 </template>
 
 <script>
+import InstructorCard from "./InstructorCard.vue";
 import TestimonialComponent from "./TestimonialComponent.vue";
 export default {
   name: "InstructorComponent",
   components: {
     TestimonialComponent,
+    InstructorCard,
+  },
+  data() {
+    return {
+      obj1: {
+        name: "Mike Hart",
+        img: "instructor-mikehart-200x127.jpg",
+      },
+      obj2: {
+        name: "John Smith",
+        img: "instructor-johnsmith-200x127.jpg",
+      },
+      obj3: { name: "Angela Hart", img: "instructor-angelahart-200x127.jpg" },
+    };
   },
 };
 </script>
@@ -118,9 +73,6 @@ export default {
   border-top: 10px solid rgb(1, 199, 1);
   background: white;
   border-radius: 10px;
-}
-img:hover {
-  transform: scale(1.1);
 }
 .row.justify-content-between.text-center.position-absolute {
   top: 200px;
