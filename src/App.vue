@@ -31,7 +31,7 @@ p {
   margin: 0 !important;
 }
 .c-grey {
-  color: grey;
+  color: grey !important;
 }
 .c-white {
   color: white !important;
@@ -48,10 +48,10 @@ a:hover {
   color: currentColor !important;
 }
 .c-green {
-  color: lightgreen;
+  color: lightgreen !important;
 }
 a {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .w-30 {
   width: 28% !important;
