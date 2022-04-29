@@ -54,10 +54,8 @@ export default {
       //this.testimonialData[index].tip = !this.testimonialData[index].tip;
       for (let i = 0; i < 5; i++) {
         this.testimonialData[i].tip = false;
-        console.log(this.testimonialData[index].tip);
         if (i == index) {
           this.testimonialData[i].tip = true;
-          console.log(this.testimonialData[index].tip);
         }
       }
     },

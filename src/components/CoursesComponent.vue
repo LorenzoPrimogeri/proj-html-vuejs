@@ -22,81 +22,17 @@
                 </p>
               </div>
               <div class="my-5">
-                <a href="" class="lp-btn">COURSE INFOMATION</a>
+                <a href="" class="lp-btn c-white py-2 px-3"
+                  >COURSE INFOMATION</a
+                >
               </div>
             </div>
           </div>
           <div class="col-5"></div>
           <div class="card-section d-flex my-5 d-flex justify-content-between">
-            <div
-              class="
-                car-card
-                text-center
-                d-flex
-                flex-column
-                justify-content-between
-              "
-            >
-              <div>
-                <img
-                  class="py-2 my-2 w-100"
-                  src="../assets/img/courses-passplus-200x200.jpg"
-                  alt="PassPlus"
-                />
-              </div>
-              <div>
-                <h3 class="c-grey">Pass PLus</h3>
-              </div>
-              <div>
-                <a href="" class="lp-btn2">LEARN MORE</a>
-              </div>
-            </div>
-            <div
-              class="
-                text-center
-                car-card
-                d-flex
-                flex-column
-                justify-content-between
-              "
-            >
-              <div>
-                <img
-                  class="py-2 my-2 w-100"
-                  src="../assets/img/course-intensive-200x200.jpg"
-                  alt="PassPlus"
-                />
-              </div>
-              <div>
-                <h3 class="c-grey">Intensive Course</h3>
-              </div>
-              <div>
-                <a href="" class="lp-btn2">LEARN MORE</a>
-              </div>
-            </div>
-            <div
-              class="
-                text-center
-                car-card
-                d-flex
-                flex-column
-                justify-content-between
-              "
-            >
-              <div>
-                <img
-                  class="py-2 my-2 w-100"
-                  src="../assets/img/courses-instructor-200x200.jpg"
-                  alt="PassPlus"
-                />
-              </div>
-              <div>
-                <h3 class="c-grey">Instructors</h3>
-              </div>
-              <div>
-                <a href="" class="lp-btn2">LEARN MORE</a>
-              </div>
-            </div>
+            <CourseCard :obj="obj" />
+            <CourseCard :obj="obj1" />
+            <CourseCard :obj="obj2" />
           </div>
         </div>
       </div>
@@ -107,10 +43,28 @@
 
 <script>
 import RateComponent from "./RateComponent.vue";
+import CourseCard from "./CourseCard.vue";
 export default {
   name: "CoursesComponent",
   components: {
     RateComponent,
+    CourseCard,
+  },
+  data() {
+    return {
+      obj: {
+        intestazione: "Pass Plus",
+        img: "courses-passplus-200x200.jpg",
+      },
+      obj1: {
+        intestazione: "Intensive Course",
+        img: "course-intensive-200x200.jpg",
+      },
+      obj2: {
+        intestazione: "Instructors",
+        img: "courses-instructor-200x200.jpg",
+      },
+    };
   },
 };
 </script>
@@ -134,22 +88,6 @@ export default {
 }
 .col-5.position-absolute {
   top: -40px;
-}
-.lp-btn {
-  color: white;
-  background-color: hsl(105deg 40% 56%);
-  border-radius: 30px;
-  padding: 12px 30px;
-}
-.lp-btn2:hover {
-  border: 5px solid rgb(1, 199, 1);
-  color: rgb(1, 199, 1) !important;
-}
-.lp-btn2 {
-  color: grey;
-  border: 5px solid rgb(161, 161, 161);
-  border-radius: 30px;
-  padding: 12px 30px;
 }
 .new {
   top: -50px;

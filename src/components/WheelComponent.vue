@@ -34,7 +34,7 @@
           <input type="text" placeholder="Location*" class="w-75 my-4 p-2" />
         </div>
         <div class="my-3">
-          <a class="btn c-white">REQUEST A CALLBACK</a>
+          <a class="lp-btn c-white py-2 px-3">REQUEST A CALLBACK</a>
         </div>
       </div>
     </div>
@@ -65,10 +65,6 @@ input {
   border: 2px solid rgb(206, 201, 201);
   border-radius: 2%;
   outline: none !important;
-}
-.btn {
-  border-radius: 30px;
-  background-color: lightgreen;
 }
 input[placeholder="Your Name*"] {
   background: url(../assets/img/image.png) no-repeat;

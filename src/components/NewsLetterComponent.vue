@@ -22,15 +22,9 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .container-fluid {
   background-image: url("../assets/img/newsletter_background.jpg") !important;
   background-size: cover;
-}
-.lp-btn {
-  color: white;
-  background-color: hsl(105deg 40% 56%);
-  border-radius: 30px;
 }
 </style>

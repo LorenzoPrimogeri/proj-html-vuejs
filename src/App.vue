@@ -62,4 +62,8 @@ a {
 .w-80 {
   width: 80% !important;
 }
+.lp-btn {
+  background: rgb(1, 199, 1) !important;
+  border-radius: 30px !important;
+}
 </style>

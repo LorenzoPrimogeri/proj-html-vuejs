@@ -3,39 +3,9 @@
     <div class="container-fluid py-5">
       <div class="container position-relative">
         <div class="row justify-content-between position-absolute w-100">
-          <div class="lp-card py-5 font-size c-grey">
-            <circle-progress
-              :percentage="95"
-              :stroke-width="15"
-              :r="100"
-              stroke-color="#13b900"
-              stroke-bg-color="#ffffff"
-            >
-            </circle-progress>
-            <h3 class="c-grey text-center my-4">PASS RATE</h3>
-          </div>
-          <div class="lp-card py-5 font-size c-grey">
-            <circle-progress
-              :percentage="100"
-              :stroke-width="15"
-              :r="100"
-              stroke-color="#13b900"
-              stroke-bg-color="#ffffff"
-            >
-            </circle-progress>
-            <h3 class="c-grey text-center my-4">REFERRAL RATE</h3>
-          </div>
-          <div class="lp-card py-5 font-size c-grey">
-            <circle-progress
-              :percentage="0"
-              :stroke-width="15"
-              :r="100"
-              stroke-color="#13b900"
-              stroke-bg-color="#e2e6e2"
-            >
-            </circle-progress>
-            <h3 class="c-grey text-center my-4">ACCIDENT RATE</h3>
-          </div>
+          <CircleCard :obj="obj1" />
+          <CircleCard :obj="obj2" />
+          <CircleCard :obj="obj3" />
         </div>
       </div>
     </div>
@@ -44,17 +14,32 @@
 </template>
 
 <script>
-import CircleProgress from "vue-pithy-progress/lib/circle-progress.umd.min.js";
-import "vue-pithy-progress/lib/semi-circle-progress.css";
+
+import CircleCard from "./CircleCard.vue";
 export default {
   name: "RateComponent",
   data() {
     return {
       percentage: 95,
+      obj1: {
+        text: "PASS RATE",
+        percentage: 95,
+        strokebgcolor: "#ffffff",
+      },
+      obj2: {
+        text: "REFERRAL RATE",
+        percentage: 100,
+        strokebgcolor: "#ffffff",
+      },
+      obj3: {
+        text: "ACCIDENT RATE",
+        percentage: 0,
+        strokebgcolor: "#e2e6e2",
+      },
     };
   },
   components: {
-    CircleProgress,
+    CircleCard,
   },
 };
 </script>

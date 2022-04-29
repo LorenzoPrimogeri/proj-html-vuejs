@@ -5,48 +5,10 @@
         <div class="position-absolute">
           <div class="row justify-content-around text-center lp-card">
             <h1 class="text-center py-5">Latest News</h1>
-            <div class="col-5">
-              <div>
-                <img
-                  class="w-100 my-3"
-                  src="../assets/img/blog-choosecar-700x441.jpg"
-                  alt="audi"
-                />
-              </div>
-              <div>
-                <h3 class="c-green">What Car to Start With?</h3>
-                <p>
-                  February 7th, 2019 | <span class="c-green"> 0 Comments</span>
-                </p>
-              </div>
-              <div>
-                <p class="c-grey py-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing
-                </p>
-              </div>
-            </div>
-            <div class="col-5">
-              <div>
-                <img
-                  class="w-100 my-3"
-                  src="../assets/img/blogpost-10and2-700x441.jpg"
-                  alt="audi"
-                />
-              </div>
-              <div>
-                <h3 class="c-green">What Car to Start With?</h3>
-                <p>
-                  February 7th, 2019 | <span class="c-green"> 0 Comments</span>
-                </p>
-              </div>
-              <div>
-                <p class="c-grey py-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing
-                </p>
-              </div>
-            </div>
+            <NewsCard :obj="obj1"/>
+            <NewsCard :obj="obj2"/>
             <div class="py-5 my-5">
-              <a href="" class="lp-btn c-white px-2 py-3">MORE FROM THE BLOG</a>
+              <a href="" class="lp-btn c-white px-4 py-2">MORE FROM THE BLOG</a>
             </div>
           </div>
           <div class="container text-center triangle">
@@ -63,8 +25,22 @@
 </template>
 
 <script>
+import NewsCard from "./NewsCard.vue";
 export default {
   name: "NewsComponent",
+  data() {
+    return {
+      obj1: {
+        img: "blog-choosecar-700x441.jpg",
+      },
+      obj2: {
+        img: "blogpost-10and2-700x441.jpg",
+      },
+    };
+  },
+  components: {
+    NewsCard,
+  },
 };
 </script>
 
@@ -90,9 +66,5 @@ img[alt="Triangle"] {
   border-top: 10px solid #636262;
   background: white;
   border-radius: 10px;
-}
-.lp-btn {
-  background: rgb(1, 199, 1);
-  border-radius: 30px;
 }
 </style>

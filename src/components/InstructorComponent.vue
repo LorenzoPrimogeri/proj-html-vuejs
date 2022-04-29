@@ -113,10 +113,6 @@ export default {
 .spaceMode {
   height: 500px;
 }
-.lp-btn {
-  background: rgb(1, 199, 1);
-  border-radius: 30px;
-}
 .lp-card {
   box-shadow: 5px 5px 15px 5px #636262;
   border-top: 10px solid rgb(1, 199, 1);

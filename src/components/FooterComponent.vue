@@ -57,7 +57,7 @@
               />
             </div>
             <div class="py-5 text-center">
-              <a href="" class="lp-btn c-white py-2 px-3">BOOK NOW</a>
+              <a href="" class="lp-btn c-white py-2 px-4">BOOK NOW</a>
             </div>
           </div>
         </div>
@@ -72,6 +72,7 @@ import NewsLetterComponent from "./NewsLetterComponent.vue";
 import data1 from "../assets/data/footerData1.js";
 import data2 from "../assets/data/footerData2.js";
 import FooterBottomComponent from "./FooterBottomComponent.vue";
+
 export default {
   name: "FooterComponent",
   components: {
@@ -91,10 +92,6 @@ export default {
 .container-fluid {
   background-image: url("../assets/img/footer-background-color.jpg");
   background-size: cover;
-}
-.lp-btn {
-  background: rgb(1, 199, 1);
-  border-radius: 30px;
 }
 li {
   font-size: 18px;

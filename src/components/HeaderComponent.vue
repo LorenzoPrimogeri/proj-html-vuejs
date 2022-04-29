@@ -46,7 +46,7 @@
                 </ul>
               </div>
               <div class="col-2 d-flex align-items-center">
-                <a href="" class="lp-btn py-3 px-5">BOOK NOW</a>
+                <a href="" class="lp-btn py-3 px-5 c-white">BOOK NOW</a>
               </div>
             </div>
           </div>
@@ -86,11 +86,6 @@ li {
 li:hover {
   color: lightgreen;
   border-bottom: 4px solid lightgreen;
-}
-.lp-btn {
-  color: white;
-  background-color: hsl(105deg 40% 56%);
-  border-radius: 30px;
 }
 .newClass {
   background-color: lightgreen;
