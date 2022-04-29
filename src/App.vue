@@ -66,4 +66,8 @@ a {
   background: rgb(1, 199, 1) !important;
   border-radius: 30px !important;
 }
+.lp-btn:hover {
+  color: red !important;
+  border: 2px solid red !important;
+}
 </style>
